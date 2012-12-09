@@ -30,10 +30,6 @@ def download_horaire(ligne, arret, sens)
 
   path = "html body table#body_table tbody tr td table#tbmain1 tbody tr td#container div#content_box.content_voyages div.content_box_voyages_step2 table tbody tr"
 
-  def conv(text)
-    return String.encode('utf-8', 'iso-8859-1', text)
-  end
-
   doc = Hpricot(open(url))
 
   return (doc/"div.content_box_voyages_step2//tr").collect {|x| (x/"td").inner_html }
