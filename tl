@@ -1,7 +1,7 @@
 #!/usr/bin/env ruby
 #
 # Affiche les prochains bus/metros d'apres les données accessibles sur le site
-# des transports publiques lausannois (http://www.t-l.ch/).
+# des transports publics lausannois (http://www.t-l.ch/).
 #
 # Copyleft 2012 François Deppierraz
 # License GPL
